@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <title>경찰청</title>
+  <style>
+    html{
+      background-color: rgb(0,40,112);
+      color: white;
+    }
+    h1{
+      position: relative;
+      text-align: center;
+      bottom: 100px;
+      margin-top:0;
+      margin-bottom: 0;
+    }
+    main{
+      margin: 10px
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+    header{
+      border-bottom:1px solid white;
+      padding-left: 20px;
+    }
+    footer{
+      border-top:1px solid white;
+      padding:20px;
+      text-align: center;
+    }
+    .content{
+      display:flex;
+    }
+    .content nav{
+      border-right:1px solid white;
+    }
+    .content a{
+      text-decoration: none;
+    }
+    @media(max-width:500px){
+      .content{
+        flex-direction: column;
+      }
+      .content nav{
+        border: none;
+      }
+      h1{
+        display: none;
+      }
+    }
+    nav{
+      flex-basis: 150px;
+      flex-shrink:0;
+    }
+    a{
+      color: white;
+    }
+    #main p{
+      padding:10px;
+    }
+    input[type=text], textarea {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 2px solid lightblue;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <header>
+        <img src="logo.png" width=180px>
+        <h1>범죄자 얼굴인식 수사 시스템</h1></header>
+      <section class="content">
+        <nav>
+          <ul>
+            <li><a href="main.html">메인</a></li>
+            <li><a href="범죄신고.html">범죄신고</a></li>
+            <li><a href="사건개요.html">사건개요</a></li>
+            <li><a href="신상정보.html">신상정보</a></li>
+            <li><a href="이동루트.html">이동루트</a></li>
+            <!-- <li><a href="info.html">정보공유</a></li> -->
+          </ul></nav>
+        <main>
+          <p>서울특별시의 범죄신고<p>
+          <p>수사 지원을 요청합니다.</p>
+          <form action="http://localhost/report.php" method="post" enctype="multipart/form-data" target="_blank" style="margin-right: 500px;">
+            <p>
+              <label for="id_txt">제목</label>:
+              <input id="id_txt" type="text" name="id">
+            </p>
+            <p>
+              <label>내용:
+                <textarea id="txt" cols="50" rows="10" name="pw"></textarea>
+              </label>
+            </p>
+            <input type="file" name="file" multiple><br>
+            <input type="submit" value="upload" name="submit">
+          </form>
+          <p>
+            범죄 용의자가 도주했을경우, 사이버 얼굴인식 서비스를 통해 수사 지원을 요청할 수 있습니다.
+            용의자의 사진을 첨부하고, 범죄내용과 요청하는 지역 경찰서를 제출하세요.
+          </p></main>
+      </section>
+      <footer>
+        (우)03739 서울특별시 서대문구 통일로 97 | 민원대표전화 182(유료) | 찾아오시는길<br>
+        COPYRIGHT2018 NATIONAL POLICE AGENCY<br>
+        본 홈페이지에 게시판 이메일 주소가 자동 수집되는 것을 거부하며, 이를 위반시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.
+      </footer>
+    </div>
+  </body>
+  </html>

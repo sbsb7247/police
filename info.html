@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <title>경찰청</title>
+  <style>
+    html{
+      background-color: rgb(0,40,112);
+      color: white;
+    }
+    h1{
+      position: relative;
+      text-align: center;
+      bottom: 100px;
+      margin-top:0;
+      margin-bottom: 0;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+    header{
+      border-bottom:1px solid white;
+      padding-left: 20px;
+    }
+    footer{
+      border-top:1px solid white;
+      padding:20px;
+      text-align: center;
+    }
+    .content{
+      display:flex;
+    }
+    .content nav{
+      border-right:1px solid white;
+    }
+    .content a{
+      text-decoration: none;
+    }
+    @media(max-width:500px){
+      .content{
+        flex-direction: column;
+      }
+      .content nav{
+        border: none;
+      }
+      h1{
+        display: none;
+      }
+      #logo{
+        position: relative;
+        left:75px;
+      }
+    }
+    nav{
+      flex-basis: 150px;
+      flex-shrink:0;
+    }
+    a{
+      color: white;
+    }
+    #main p{
+      padding:10px;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <header>
+        <img src="logo.png" width=180px>
+        <h1>범죄자 얼굴인식 수사 시스템</h1></header>
+      <section class="content">
+        <nav>
+          <ul>
+            <li><a href="main.html">메인</a></li>
+            <li><a href="범죄신고.html">범죄신고</a></li>
+            <li><a href="사건개요.html">사건개요</a></li>
+            <li><a href="신상정보.html">신상정보</a></li>
+            <li><a href="이동루트.html">이동루트</a></li>
+            <li><a href="info.html">정보공유</a></li>
+          </ul></nav>
+        <main>
+          <p>
+          가까운 경찰서는 어디에 있나요?<br>
+          답변을 입력하세요. 답변은 친절하고 명확하면서 간결한 편이 좋습니다. 필요하면 예시나 시각 자료를 추가해보세요. 방문객이 답변을 읽고 충분히 이해할 수 있도록 다시 한번 검토해보세요.<br>
+          </p>
+          <p style="padding-top: 50px; padding-bottom: 50px;">
+          범죄 신고는 어떻게 하나요?<br>
+          답변을 입력하세요. 답변은 친절하고 명확하면서 간결한 편이 좋습니다. 필요하면 예시나 시각 자료를 추가해보세요. 방문객이 답변을 읽고 충분히 이해할 수 있도록 다시 한번 검토해보세요.<br>
+          </p></main>
+      </section>
+      <footer>
+        (우)03739 서울특별시 서대문구 통일로 97 | 민원대표전화 182(유료) | 찾아오시는길<br>
+        COPYRIGHT2018 NATIONAL POLICE AGENCY<br>
+        본 홈페이지에 게시판 이메일 주소가 자동 수집되는 것을 거부하며, 이를 위반시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.
+      </footer>
+    </div>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5f7c76ebf0e7167d00169f64/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+  </body>
+  </html>

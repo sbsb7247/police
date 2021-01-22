@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <title>경찰청</title>
+  <style>
+    html{
+      background-color: rgb(0,40,112);
+      color: white;
+    }
+    h1{
+      position: relative;
+      text-align: center;
+      bottom: 100px;
+      margin-top:0;
+      margin-bottom: 0;
+    }
+    main{
+      margin: 10px
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+    header{
+      border-bottom:1px solid white;
+      padding-left: 20px;
+    }
+    footer{
+      border-top:1px solid white;
+      padding:20px;
+      text-align: center;
+    }
+    .content{
+      display:flex;
+    }
+    .content nav{
+      border-right:1px solid white;
+    }
+    .content a{
+      text-decoration: none;
+    }
+    @media(max-width:500px){
+      .content{
+        flex-direction: column;
+      }
+      .content nav{
+        border: none;
+      }
+      h1{
+        display: none;
+      }
+      #logo{
+        position: relative;
+        left:75px;
+      }
+    }
+    nav{
+      flex-basis: 150px;
+      flex-shrink:0;
+    }
+    a{
+      color: white;
+    }
+    #main p{
+      padding:10px;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <header>
+        <img src="logo.png" width=180px>
+        <h1>범죄자 얼굴인식 수사 시스템</h1></header>
+      <section class="content">
+        <nav>
+          <ul>
+            <li><a href="main.html">메인</a></li>
+            <li><a href="범죄신고.html">범죄신고</a></li>
+            <li><a href="사건개요.html">사건개요</a></li>
+            <li><a href="신상정보.html">신상정보</a></li>
+            <li><a href="이동루트.html">이동루트</a></li>
+            <!-- <li><a href="info.html">정보공유</a></li> -->
+          </ul></nav>
+        <main>
+          <h2>사건 개요</h2>
+          <video height="400" controls>
+            <source src="videos/사고영상.mp4">
+          </video>
+          <p>
+            26세 남성이 뺑소니 차량에 치여 숨진 사건이 발생했다.
+            지난 9월25일 고 ㅇㅇㅇ(26.남) 씨가 밤 9시 10분쯤 서울시 서울시 노원구 공릉동 공연초등학교 부근 골목길을
+            지나던 중 뺑소니 차량에 치여 사망했다. 사건 당일 그는 집 앞 편의점을 들렸다 집으로 돌아오던 길이었다.
+            뺑소니범은 길을 걷던 고 ㅇㅇㅇ씨를 가격한 후 지체 없이 자리를 떠났다.
+            사고 현장 CCTV를 분석한 결과 차종은 ㅇㅇㅇ 이고, 차 안에는 운전자와 동승자 한명이 있는것으로 확인되었으나
+            도주한 경로에는 인적이 드문 골목길이라 CCTV가 없어 정확한 도주경로를 파악하기 힘들다.
+          </p>
+      </section>
+      <footer>
+        (우)03739 서울특별시 서대문구 통일로 97 | 민원대표전화 182(유료) | 찾아오시는길<br>
+        COPYRIGHT2018 NATIONAL POLICE AGENCY<br>
+        본 홈페이지에 게시판 이메일 주소가 자동 수집되는 것을 거부하며, 이를 위반시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.
+      </footer>
+    </div>
+  </body>
+  </html>

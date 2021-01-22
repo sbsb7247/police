@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <title>경찰청</title>
+  <style>
+    html{
+      background-color: rgb(0,40,112);
+      color: white;
+    }
+    h1{
+      position: relative;
+      text-align: center;
+      bottom: 100px;
+      margin-top:0;
+      margin-bottom: 0;
+    }
+    table{
+      margin: 10px
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+    header{
+      border-bottom:1px solid white;
+      padding-left: 20px;
+    }
+    footer{
+      border-top:1px solid white;
+      padding:20px;
+      text-align: center;
+    }
+    .content{
+      display:flex;
+    }
+    .content nav{
+      border-right:1px solid white;
+    }
+    .content a{
+      text-decoration: none;
+    }
+    @media(max-width:500px){
+      .content{
+        flex-direction: column;
+      }
+      .content nav{
+        border: none;
+      }
+      h1{
+        display: none;
+      }
+      #logo{
+        position: relative;
+        left:75px;
+      }
+    }
+    nav{
+      flex-basis: 150px;
+      flex-shrink:0;
+    }
+    a{
+      color: white;
+    }
+    #main p{
+      padding:10px;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <header>
+        <img src="logo.png" width=180px>
+        <h1>범죄자 얼굴인식 수사 시스템</h1></header>
+      <section class="content">
+        <nav>
+          <ul>
+            <li><a href="main.html">메인</a></li>
+            <li><a href="범죄신고.html">범죄신고</a></li>
+            <li><a href="사건개요.html">사건개요</a></li>
+            <li><a href="신상정보.html">신상정보</a></li>
+            <li><a href="이동루트.html">이동루트</a></li>
+            <!-- <li><a href="info.html">정보공유</a></li> -->
+          </ul></nav>
+        <main>
+          <table border="1">
+            <tr>
+              <td rowspan="5"><img src="inho.jpg" width=150px></td><td>성명</td><td>최인호</td>
+            </tr>
+            <tr>
+              <td>나이</td><td>1995년생(만25세)</td>
+            </tr>
+            <tr>
+              <td>키</td><td>185</td>
+            </tr>
+            <tr>
+              <td>몸무게</td><td>75</td>
+            </tr>
+            <tr>
+              <td colspan="3">사건요지</td>
+            </tr>
+            <tr>
+              <td colspan="3">뺑소니 후 도주</td>
+            </tr>
+            <tr>
+              <td colspan="3"><img src="inho1.png"</td>
+            </tr>
+          </table>
+
+          <table border="1">
+            <tr>
+              <td rowspan="5"><img src="seongbin.jpg" width=150px></td><td>성명</td><td>윤성빈</td>
+            </tr>
+            <tr>
+              <td>나이</td><td>1996년생(만23세)</td>
+            </tr>
+            <tr>
+              <td>키</td><td>162</td>
+            </tr>
+            <tr>
+              <td>몸무게</td><td>48</td>
+            </tr>
+            <tr>
+              <td colspan="3">사건요지</td>
+            </tr>
+            <tr>
+              <td colspan="3">뺑소니 후 도주</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <img src="sb.png" style="width: 170px;">
+                <img src="sb1.png" style="width: 170px;">
+              </td>
+            </tr>
+          </table>
+        </main>
+      </section>
+      <footer>
+        (우)03739 서울특별시 서대문구 통일로 97 | 민원대표전화 182(유료) | 찾아오시는길<br>
+        COPYRIGHT2018 NATIONAL POLICE AGENCY<br>
+        본 홈페이지에 게시판 이메일 주소가 자동 수집되는 것을 거부하며, 이를 위반시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.
+      </footer>
+    </div>
+  </body>
+  </html>

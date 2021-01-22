@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <title>경찰청</title>
+  <style>
+    html{
+      background-color: rgb(0,40,112);
+      color: white;
+    }
+    h1{
+      position: relative;
+      text-align: center;
+      bottom: 100px;
+      margin-top:0;
+      margin-bottom: 0;
+    }
+    video{
+      /* transform: translate(250px,0); */
+      margin: 30px
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+    header{
+      border-bottom:1px solid white;
+      padding-left: 20px;
+    }
+    footer{
+      border-top:1px solid white;
+      padding:20px;
+      text-align: center;
+    }
+    .content{
+      display:flex;
+    }
+    .content nav{
+      border-right:1px solid white;
+    }
+    .content a{
+      text-decoration: none;
+    }
+    @media(max-width:500px){
+      .content{
+        flex-direction: column;
+      }
+      .content nav{
+        border: none;
+      }
+      h1{
+        display: none;
+      }
+      #logo{
+        position: relative;
+        left:75px;
+      }
+    }
+    nav{
+      flex-basis: 150px;
+      flex-shrink:0;
+    }
+    a{
+      color: white;
+    }
+    #main p{
+      padding:10px;
+    }
+    #wrap{
+      margin: 10px;
+      overflow: hidden;
+    }
+    #wrap #content{
+      width: 50%; height: 100%;
+      float: left;
+      box-sizing: border-box;
+      margin: 10px;
+    }
+    #wrap #banner{
+      width: 30%; height: 100%;
+      float:left;
+      box-sizing: border-box;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <header>
+        <img src="logo.png" width=180px>
+        <h1>범죄자 얼굴인식 수사 시스템</h1></header>
+      <section class="content">
+        <nav>
+          <ul>
+            <li><a href="main.html">메인</a></li>
+            <li><a href="범죄신고.html">범죄신고</a></li>
+            <li><a href="사건개요.html">사건개요</a></li>
+            <li><a href="신상정보.html">신상정보</a></li>
+            <li><a href="이동루트.html">이동루트</a></li>
+            <!-- <li><a href="info.html">정보공유</a></li> -->
+          </ul></nav>
+        <main>
+          <video height="400" controls>
+            <source src="videos/인식후.mp4">
+          </video>
+          <p style="margin: 30px;">공릉역 공연초등학교 부근에서 뺑소니 후 도주 하였음.<br>
+            도주 방향은 태릉입구역 방향으로 파악되었으나, cctv설치가 안되어있는 골목길만 이용하여 도주해서
+            도주 경로 파악이 매우 어려웠음.<br>요청했던 서초구 방배동, 남양주시 별내동 9월 25일~9월 30일 6일치 CCTV영상을 확보 한 후
+            가지고 있는 얼굴 사진으로 얼굴인식 수사 시스템을 돌림. 도주경로 파악완료.</p>
+          <div id="wrap">
+            <div id="content">
+              <table border="1" style="margin: 30px;" cellpadding="10">
+                <tr>
+                  <th colspan="2" bgcolor=rgb(36,252,255);><img src="inho1.png" width=150px></th>
+                </tr>
+                <tr>
+                  <th colspan="2" bgcolor=rgb(36,252,255);>최인호 도주경로</th>
+                </tr>
+                <tr>
+                  <th colspan="2">9.26(토)</th>
+                </tr>
+                <tr>
+                  <td>13:10~14:25</td><td>ㅇㅇ음식점 앞</td>
+                </tr>
+                  <td>17:56~18:00</td><td>별내 푸르지오 아파트 현관</td>
+                </tr>
+                <tr>
+                  <th colspan="2">9.27(일)</th>
+                </tr>
+                <tr>
+                  <td>11:20~11:38</td><td>CU편의점 별내남광점</td>
+                </tr>
+                  <td>17:56~18:05</td><td>별내 푸르지오 아파트 현관</td>
+                </tr>
+                <tr>
+                  <th colspan="2">9.28(월)</th>
+                </tr>
+                <tr>
+                  <td>09:40~13:14</td><td>메가박스 별내점</td>
+                </tr>
+                  <td>20:56~21:04</td><td>스타벅스 별내점</td>
+                </tr>
+                <tr>
+                  <th colspan="2">9.30(수)</th>
+                </tr>
+                <tr>
+                  <td>19:10~19:48</td><td>ㅁㅁ음식점</td>
+                </tr>
+                  <td>21:47~22:34</td><td>스타벅스 별내점</td>
+                </tr>
+              </table>
+              <table border="1" style="margin: 30px;" cellpadding="10">
+                <tr>
+                  <th colspan="2" bgcolor=rgb(36,252,255);><img src="112233.png" width=150px></th>
+                </tr>
+                <tr>
+                  <th colspan="2" bgcolor=rgb(36,252,255);>윤성빈 도주경로</th>
+                </tr>
+                <tr>
+                  <th colspan="2">9.27(일)</th>
+                </tr>
+                <tr>
+                  <td>13:10~14:25</td><td>폴바셋 방배역점</td>
+                </tr>
+                  <td>17:56~18:03</td><td>방배서리풀 e편한세상아파트</td>
+                </tr>
+                <tr>
+                  <th colspan="2">9.28(월)</th>
+                </tr>
+                <tr>
+                  <td>10:10~11:00</td><td>서브웨이 방배역점</td>
+                </tr>
+                  <td>20:56~23:10</td><td>메가박스 이수역점</td>
+                </tr>
+                <tr>
+                  <th colspan="2">9.29(화)</th>
+                </tr>
+                <tr>
+                  <td>22:10~22:30</td><td>방배역 버스정류장</td>
+                </tr>
+                  <td>23:11~23:15</td><td>방배서리풀 e편한세상아파트</td>
+                </tr>
+                <tr>
+                  <th colspan="2">9.30(수)</th>
+                </tr>
+                <tr>
+                  <td>13:10~13:30</td><td>ㅇㅇ음식점</td>
+                </tr>
+                  <td>17:56~18:30</td><td>롯데마트</td>
+                </tr>
+              </table>
+            </div>
+            <div id="banner">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.950060562505!2d127.0721864151697!3d37.62686247978669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cbbd0e7ae4575%3A0xbeecf7ad37853225!2z7ISc7Jq46rO17Jew7LSI65Ox7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1602236912228!5m2!1sko!2skr" width="600" height="450" frameborder="0" style="border:0; margin-left: 30px; margin-bottom: 30px;" aria-hidden="false" tabindex="0">
+            </iframe>
+            </div>
+          </div>
+        </main>
+      </section>
+      <footer>
+        (우)03739 서울특별시 서대문구 통일로 97 | 민원대표전화 182(유료) | 찾아오시는길<br>
+        COPYRIGHT2018 NATIONAL POLICE AGENCY<br>
+        본 홈페이지에 게시판 이메일 주소가 자동 수집되는 것을 거부하며, 이를 위반시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.
+      </footer>
+    </div>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5f7c7937f0e7167d0016a01f/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </body>
+  </html>
